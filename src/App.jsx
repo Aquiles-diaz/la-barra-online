@@ -12,10 +12,16 @@ export default function LaBarraOnline() {
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const combos = [
-    { tipo: "combo", nombre: "Combo Fernet x2", desc: "Fernet + Coca + hielo = felicidad garantizada.", precio: 6500, img: "/combo1.jpg" },
-    { tipo: "combo", nombre: "Combo Vodka Party", desc: "Vodka + energizante + vaso rojo. Let’s gooo!", precio: 8900, img: "/combo2.jpg" },
-    { tipo: "combo", nombre: "Combo Birrero", desc: "6 birras + maní salado de regalo. Plan perfecto.", precio: 7200, img: "/combo3.jpg" },
-    { tipo: "combo", nombre: "Combo Gin Tonic", desc: "Gin + tónica + limón. Frescura asegurada.", precio: 7600, img: "/combo4.jpg" },
+    { 
+  tipo: "combo",
+  nombre: "Combo Fernet",
+  desc: "Fernet + Coca + hielo = felicidad garantizada.",
+  precio: 14900,
+  img: "https://acdn-us.mitiendanube.com/stores/001/144/141/products/mesa-de-trabajo-51_1-10011-6bad72be828aca317516696657206839-1024-1024.jpg"
+},
+    { tipo: "combo", nombre: "Combo Vodka Party", desc: "Vodka + energizante + vaso rojo. Let’s gooo!", precio: 29000, img: "https://http2.mlstatic.com/D_NQ_NP_2X_790992-MLA45413911395_042021-F.webp" },
+    { tipo: "combo", nombre: "Combo Birrero", desc: "6 birras + maní salado de regalo. Plan perfecto.", precio: 7200, img: "https://http2.mlstatic.com/D_NQ_NP_2X_756205-MLA77326661057_062024-F.webp" },
+    { tipo: "combo", nombre: "Combo Gin Tonic", desc: "Gin + tónica + limón. Frescura asegurada.", precio: 14750, img: "https://acdn-us.mitiendanube.com/stores/001/144/141/products/mesa-de-trabajo-1279-c843e8db796b9b33e317074904015971-1024-1024.png" },
     { tipo: "combo", nombre: "Combo Champagne Night", desc: "Champagne + copas + velas. Noche especial.", precio: 9800, img: "/combo5.jpg" },
   ];
 
@@ -27,8 +33,8 @@ export default function LaBarraOnline() {
   const [resultadosFiltrados, setResultadosFiltrados] = useState(productosTotales);
 
   const categorias = [
-    "CHIVAS EXPERIENCE", "OFERTAS", "VINOS", "ESPUMANTES", "WHISKIES", "GIN",
-    "LICORES", "VODKA", "RON", "APERITIVOS", "CERVEZAS", "COMESTIBLES",
+   "OFERTAS", "VINOS", "ESPUMANTES", "WHISKIES", "GIN",
+    "LICORES", "VODKA", "RON", "APERITIVOS", "CERVEZAS",
     "ACCESORIOS", "OTRAS",
   ];
 
@@ -84,7 +90,7 @@ export default function LaBarraOnline() {
       </header>
 
       {/* Hero */}
-      <section className="h-[80vh] flex items-center justify-center bg-cover bg-center relative" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1170&auto=format&fit=crop')` }}>
+      <section className="h-[80vh] flex items-center justify-center bg-cover bg-center relative" style={{ backgroundImage: `url('https://images.unsplash.com/photo-1680868164610-c085a6bf8c70?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')` }}>
         <div className="bg-black bg-opacity-70 p-10 rounded-lg text-center max-w-xl mx-auto animate__animated animate__fadeIn">
           <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
             Tu previa <span className="text-red-500">empieza acá</span>
